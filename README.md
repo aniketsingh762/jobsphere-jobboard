@@ -19,6 +19,25 @@
 
   JobSphere is an API-first job board platform that provides sophisticated tools for job and candidate matching. Companies and software vendors can leverage this technology to parse, enrich, and score both job and candidate data. The platform supports integrations with many apps and tools so you can automate workflows.
 
+## 🎨 New Features & Enhancements
+
+### Enhanced Filtering System
+- **Clear All Filters Button**: Added a convenient button to reset all active filters
+- **Salary Range Filter**: Filter jobs by salary ranges (e.g., 30k-50k €, 50k-70k €, etc.)
+- **Experience Level Filter**: Filter jobs by experience requirements (Débutant, Intermédiaire, Expérimenté, Senior)
+- **Remote Work Filter**: Filter jobs by remote work options (Télétravail possible, Télétravail uniquement)
+
+### Improved Visual Design
+- **Modern UI Components**: Redesigned filters and job listing cards with enhanced visual appeal
+- **Responsive Design**: Better mobile experience with optimized layouts for all screen sizes
+- **Interactive Elements**: Improved hover effects, transitions, and visual feedback
+
+### Enhanced Job Listings
+- **Salary Information**: Display salary details directly in job cards when available
+- **Experience Requirements**: Show experience level requirements in job listings
+- **Remote Work Indicators**: Visual badges for remote work opportunities
+- **Improved Information Hierarchy**: Better organization of job details for quicker scanning
+
 ## 🙈 Demo
 
   Video demo: <https://jobsphere.com/demo>
@@ -36,7 +55,7 @@
 
 2. **Start developing.**
 
-  Navigate into your new site’s directory and start it up.
+  Navigate into your new site's directory and start it up.
 
   ```shell
   cd open-jobboard/
@@ -48,7 +67,7 @@
 
   The project environment variables must be  defined in the **.env.developement** and **.env.production** files in the root directory of the project.
 
-  > Please note that you shouldn’t commit .env.* files to your source control and rather use options given by your Continuous Deployment (CD) provider.
+  > Please note that you shouldn't commit .env.* files to your source control and rather use options given by your Continuous Deployment (CD) provider.
   An example is Netlify with its [build environment variables](https://www.netlify.com/docs/continuous-deployment/#build-environment-variables).
 
   Here is an exemple of the .env files:

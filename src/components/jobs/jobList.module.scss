@@ -5,51 +5,69 @@
     text-decoration: none;
     color: #000;
     position: relative;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+    margin-bottom: 1.5rem;
 }
 
 .job {
     width: 100%;
+    padding: 1.5rem;
+    position: relative;
 }
 
 .card:hover {
-    box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
-.job__info {
-    flex: 1 1 auto;
-    position: relative;
-    color: #333F48;
+.job__badges {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
-.date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #323F48;
-    mix-blend-mode: normal;
-    opacity: 0.5;
+.interestedBadge {
+    background-color: #e3f2fd;
+    color: #0af;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.job__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .job__info_company {
-    color: #333d47;
-    font-size: 14px;
-    letter-spacing: 1px;
+    color: #0af;
+    font-size: 16px;
     font-weight: 600;
-    width: 26rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+}
+
+.job__date {
+    color: #78909c;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .job__info_title {
-    margin: 1rem 0 0.5rem 0;
-    max-width: 36rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #000;
+    margin: 1rem 0 0.75rem 0;
+    color: #263238;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 1.3;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -58,8 +76,10 @@
 }
 
 .job__info_description {
-    font-weight: 300;
-    max-width: 70%;
+    font-weight: 400;
+    color: #546e7a;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -69,63 +89,90 @@
 
 .job__info_details {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: 0;
     list-style: none;
-    margin: 0;
+    margin: 0 0 2rem 0;
     font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    margin-top: 1rem;
+    color: #455a64;
 }
 
 .details__item {
-    margin-right: 2rem;
-    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 500;
+    
+    .icon-left {
+        margin-right: 0.5rem;
+        color: #0af;
+    }
+}
+
+.remoteBadge {
+    background-color: #e8f5e9;
+    color: #4caf50;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    font-weight: 500;
 }
 
 .more {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -2rem;
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    justify-content: flex-end;
+    
     &__content {
-        padding: 8px 16px 8px 16px;
+        padding: 0.5rem 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #0af;
         color: white;
         border-radius: 5px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
+        transition: all 0.2s ease;
+        
+        &:hover {
+            background-color: #0091ea;
+            transform: translateY(-2px);
+        }
     }
 }
 
 @media (max-width: 600px) {
-    .job__info_company {
-        max-width: 100%;
-        width: 100%;
+    .job {
+        padding: 1rem;
     }
-
+    
+    .job__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
     .job__info_details {
         flex-direction: column;
-        margin-bottom: 2rem;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
     }
+    
     .details__item {
-        max-width: 100%;
         width: 100%;
+        justify-content: center;
     }
-
+    
     .job__info_title {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        font-size: 18px;
     }
-
+    
     .more {
-      position: relative;
+        justify-content: center;
     }
 }

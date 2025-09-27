@@ -39,3 +39,22 @@ export const  DATESOPTIONS = [
     { label: '3 années +', value: '3y' },
   ];
   
+export const SALARY_RANGES = [
+    { label: 'Moins de 30 000 €', value: '0-30000' },
+    { label: '30 000 € - 50 000 €', value: '30000-50000' },
+    { label: '50 000 € - 70 000 €', value: '50000-70000' },
+    { label: '70 000 € - 100 000 €', value: '70000-100000' },
+    { label: 'Plus de 100 000 €', value: '100000-' },
+];
+
+export const EXPERIENCE_LEVELS = [
+    { label: 'Débutant (0-2 ans)', value: '0-2' },
+    { label: 'Intermédiaire (2-5 ans)', value: '2-5' },
+    { label: 'Expérimenté (5-10 ans)', value: '5-10' },
+    { label: 'Senior (10+ ans)', value: '10-' },
+];
+
+export const REMOTE_OPTIONS = [
+    { label: 'Télétravail possible', value: 'remote' },
+    { label: 'Télétravail uniquement', value: 'remote_only' },
+];
