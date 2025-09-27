@@ -1,11 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styles from './jobList.module.scss'
-import moment from 'moment'
-import 'moment/locale/fr' 
-import Score from './score'
+import { faBriefcase, faEuroSign, faFileAlt, faIndustry, faMapMarkerAlt, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIndustry, faMapMarkerAlt, faFileAlt, faStarHalfAlt, faEuroSign, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'gatsby'
+import moment from 'moment'
+import 'moment/locale/fr'
+import styles from './jobList.module.scss'
+import Score from './score'
 
 const JobList = (props) => {
   // Helper function to extract salary information from job tags
