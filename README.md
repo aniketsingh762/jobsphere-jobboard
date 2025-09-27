@@ -48,7 +48,7 @@
   Navigate into your new site's directory and start it up.
 
   ```shell
-  cd open-jobboard/
+  cd jobsphere-jobboard/
   npm install
   npm start
   ```
